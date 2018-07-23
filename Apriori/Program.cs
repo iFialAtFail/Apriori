@@ -1,11 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+    Discuss the benefit/importance of this trick/shortcut:
+    
+    The trick/shortcut discussed in this chapter is by making sure the 
+    itemsets are sorted in lexical order, or essentially alphabetical order.
+    Since we know that an itemset will only be interesting if it is composed
+    of other interesting components, we can remove much of the guess work
+    to make sure our candiates are possibly interesting. The lexical order
+    allows us to know that we've already examined all the possibilities up
+    until n-1 itemsets and simply append the new item on to the lists
+    without repeating any items on accident, ect.
 
+ */
 namespace Apriori
 {
+    using System;
     class Program
     {
         static int[][] data = new int[][]
