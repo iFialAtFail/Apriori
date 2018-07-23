@@ -91,5 +91,19 @@ namespace Apriori
             }
             return containedIn;
         }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("{ ");
+            foreach (var item in Items)
+            {
+                sb.Append(item);
+                sb.Append(",");
+            }
+            
+            sb.Append(" }");
+            return sb.ToString();
+        }
     }
 }

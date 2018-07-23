@@ -37,6 +37,9 @@ namespace Apriori
         {
             AprioriAlgorithm ag = new AprioriAlgorithm(data,items, .15f);
             ag.Train();
+            Console.WriteLine(ag.ToString());
+            Console.ReadKey();
+            
         }
     }
 }

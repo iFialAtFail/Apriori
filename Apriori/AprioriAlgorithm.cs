@@ -164,6 +164,21 @@ namespace Apriori
             }
         }
 
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (var itemSet in LargeItemset)
+            {
+                foreach (var item in itemSet)
+                {
+                    sb.Append(item.ToString());
+                    sb.Append(",");
+                }
+                sb.Append(Environment.NewLine);
+            }
+            return sb.ToString();
+        }
+
 
     }
 }
