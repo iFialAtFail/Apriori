@@ -10,7 +10,7 @@ namespace Apriori
     {
         List<ItemSet[]> LargeItemset = new List<ItemSet[]>();// each entry in the list is a large itemset.
         private int[][] data;
-        private float minSupport;
+        private float minSupport; // in decimal form
         private string[] items;
 
         public AprioriAlgorithm(int[][] data, string[] items, float minSupportPct)
